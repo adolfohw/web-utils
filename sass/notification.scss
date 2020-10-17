@@ -1,0 +1,26 @@
+.notification-emitter {
+	background-color: white;
+	bottom: -5em;
+	box-shadow: 0 3px 10px #8888;
+	box-sizing: border-box;
+	cursor: pointer;
+	left: 20px;
+	margin: 0;
+	padding: 1em;
+	position: fixed;
+	right: 20px;
+	transition: bottom cubic-bezier(0.68, -0.55, 0.27, 1.55) 750ms;
+	z-index: 9000;
+
+	&.active {
+		bottom: 20px;
+	}
+
+	@media print {
+		display: none;
+	}
+
+	@media (min-width: 768px) {
+		left: unset;
+	}
+}
